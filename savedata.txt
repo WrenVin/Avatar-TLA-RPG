@@ -1,7 +1,7 @@
 NAME
 Briana
 Fire
-100
+119
 2
 1
 Sword
@@ -16,18 +16,18 @@ Air
 Sword
  
 NAME
-Beidger
+Biedger
 Air
 100
 5
 2
-Sword
+Stick
  
 NAME
 Tariq
 Earth
 100
-1
+2
 2
 Sword
 

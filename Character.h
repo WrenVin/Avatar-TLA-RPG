@@ -22,7 +22,7 @@ public:
     Character(string name, string element, int playerID);
     Character(string name, string element, int health, int level, int playerID, vector<string> inventory);
     ~Character();
-    void setName(string name);
+    void setName(string name); // setters and getters
     void setElement(string element);
     void setHealth(int health);
     void setLevel(int level);
@@ -31,17 +31,17 @@ public:
     string getElement();
     int getHealth();
     int getLevel();
-    virtual void getAttacked(int damage);
+    virtual void getAttacked(int damage); // takes damage from enemy
     int getPlayerID();
-    bool evade(); // chance is a 20% chance of evading damage
-    void heal();
-    void saveCharacter(); // saves character to savadata.txt based on character name
-    void addItem(string item);
-    void removeItem(string item);
+    bool evade();                 // chance is a 20% chance of evading damage
+    void heal();                  // heals character for 10-25 + level
+    void saveCharacter();         // saves character to savadata.txt based on character name
+    void addItem(string item);    // adds item to inventory
+    void removeItem(string item); // removes item from inventory
     void fight(Character *enemy); // fight function for the game
     vector<string> getInventory();
     string getInventory(int i);
-    virtual void printCharacter();
+    virtual void printCharacter(); // prints character info
 };
 
 Character::Character(string name, string element, int playerID)

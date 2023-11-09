@@ -284,7 +284,7 @@ void fight(vector<Character> &currentCharacters, bool &running)
                 {
                     cout << currentCharacters[i].getName() << " attacked " << currentCharacters[i - 1].getName() << endl;
                     currentCharacters[i].fight(&currentCharacters[i - 1]);
-                    if (currentCharacters[i + 1].getHealth() <= 0)
+                    if (currentCharacters[i - 1].getHealth() <= 0)
                     {
                         gameOver(currentCharacters, running, fighting);
                     }
